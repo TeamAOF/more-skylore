@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "skylore-addons",
+	"version": "${version}",
+	"name": "Skylore Addons",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/skylore-addons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.alloffabric.skyloreaddons.SkyloreAddons"
+		],
+		"client": [
+			"com.alloffabric.skyloreaddons.SkyloreAddonsClient"
+		],
+		"modmenu": [
+			"com.alloffabric.skyloreaddons.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"skylore-addons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.13",
+		"minecraft": "~1.18.2",
+		"java": ">=17",
+		"fabric-api": "*",
+		"botania": "*"
+	}
+}

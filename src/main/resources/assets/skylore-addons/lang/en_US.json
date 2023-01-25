@@ -1,0 +1,10 @@
+{
+  "text.autoconfig.skylore-addons.option.aquaforaManaCost": "Aquafora mana cost",
+  "text.autoconfig.skylore-addons.option.aquaforaRange": "Aquafora range",
+  "text.autoconfig.skylore-addons.option.makeWaterFinite": "Make water finite",
+  "item.skylore-addons.aquafora": "Aquafora",
+  "item.skylore-addons.floating_aquafora": "Floating Aquafora",
+  "block.skylore-addons.aquafora": "Aquafora",
+  "block.skylore-addons.floating_aquafora": "Floating Aquafora",
+  "block.skylore-addons.aquafora.reference": "Quenches the thirst"
+}
