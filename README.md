@@ -1,5 +1,5 @@
-# Skylore Addons
-Various addons used by the Skylore modpack
+# More Skylore
+Finite water, additional Botania flowers and other addons used by the Skylore modpack
 
 ## Features
 ### Aquafora

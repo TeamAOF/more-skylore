@@ -1,0 +1,10 @@
+{
+  "text.autoconfig.moreskylore.option.aquaforaManaCost": "Aquafora mana cost",
+  "text.autoconfig.moreskylore.option.aquaforaRange": "Aquafora range",
+  "text.autoconfig.moreskylore.option.makeWaterFinite": "Make water finite",
+  "item.moreskylore.aquafora": "Aquafora",
+  "item.moreskylore.floating_aquafora": "Floating Aquafora",
+  "block.moreskylore.aquafora": "Aquafora",
+  "block.moreskylore.floating_aquafora": "Floating Aquafora",
+  "block.moreskylore.aquafora.reference": "Quenches the thirst"
+}

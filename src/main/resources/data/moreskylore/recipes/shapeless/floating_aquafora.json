@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "botania:floating_flowers"
+    },
+    {
+      "item": "moreskylore:aquafora"
+    }
+  ],
+  "result": {
+    "item": "moreskylore:floating_aquafora"
+  }
+}
