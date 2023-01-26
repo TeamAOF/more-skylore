@@ -1,10 +1,17 @@
 {
   "text.autoconfig.moreskylore.option.aquaforaManaCost": "Aquafora mana cost",
   "text.autoconfig.moreskylore.option.aquaforaRange": "Aquafora range",
+  "text.autoconfig.moreskylore.option.spewomagmaManaCost": "Spewomagma mana cost",
+  "text.autoconfig.moreskylore.option.spewomagmaRange": "Spewomagma range",
   "text.autoconfig.moreskylore.option.makeWaterFinite": "Make water finite",
   "item.moreskylore.aquafora": "Aquafora",
   "item.moreskylore.floating_aquafora": "Floating Aquafora",
   "block.moreskylore.aquafora": "Aquafora",
   "block.moreskylore.floating_aquafora": "Floating Aquafora",
-  "block.moreskylore.aquafora.reference": "Quenches the thirst"
+  "block.moreskylore.aquafora.reference": "Quenches the thirst",
+  "item.moreskylore.spewomagma": "Spewomagma",
+  "item.moreskylore.floating_spewomagma": "Floating Spewomagma",
+  "block.moreskylore.spewomagma": "Spewomagma",
+  "block.moreskylore.floating_spewomagma": "Floating Spewomagma",
+  "block.moreskylore.spewomagma.reference": "An uncultured hottie"
 }

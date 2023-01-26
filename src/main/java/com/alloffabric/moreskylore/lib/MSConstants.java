@@ -12,5 +12,7 @@ public class MSConstants {
     public static class BlockNames {
         public static final String AQUAFORA = "aquafora";
         public static final String FLOATING_AQUAFORA = "floating_aquafora";
+        public static final String SPEWOMAGMA = "spewomagma";
+        public static final String FLOATING_SPEWOMAGMA = "floating_spewomagma";
     }
 }

@@ -7,9 +7,11 @@ import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 
 @Config(name = MSConstants.MOD_ID)
 public class MSConfig implements ConfigData {
-    public int aquaforaManaCost = 1000;
+    public int aquaforaManaCost = 1_200;
     public int aquaforaRange = 1;
     public boolean makeWaterFinite = true;
+    public int spewomagmaManaCost = 15_000;
+    public int spewomagmaRange = 1;
 
     private static MSConfig config;
 

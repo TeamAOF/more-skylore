@@ -10,12 +10,12 @@ import org.jetbrains.annotations.Nullable;
 import vazkii.botania.api.subtile.RadiusDescriptor;
 import vazkii.botania.api.subtile.TileEntityFunctionalFlower;
 
-public class AquaforaBlockEntity extends TileEntityFunctionalFlower {
-    protected static final int COST = MSConfig.get().aquaforaManaCost;
-    protected static final int range = MSConfig.get().aquaforaRange;
+public class SpewomagmaBlockEntity extends TileEntityFunctionalFlower {
+    protected static final int COST = MSConfig.get().spewomagmaManaCost;
+    protected static final int range = MSConfig.get().spewomagmaRange;
 
-    public AquaforaBlockEntity(BlockPos pos, BlockState state) {
-        super(MSBlockEntities.AQUAFORA, pos, state);
+    public SpewomagmaBlockEntity(BlockPos pos, BlockState state) {
+        super(MSBlockEntities.SPEWOMAGMA, pos, state);
     }
 
     @Override
@@ -31,8 +31,8 @@ public class AquaforaBlockEntity extends TileEntityFunctionalFlower {
         var did = false;
         for (var pos : BlockPos.iterate(effectivePos.add(-range, -1, -range), effectivePos.add(range, -1, range))) {
             var state = world.getBlockState(pos);
-            if ((state.isAir() || (state.isOf(Blocks.WATER) && !Blocks.WATER.getFluidState(state).isStill())) && getMana() >= COST) {
-                world.setBlockState(pos, Blocks.WATER.getDefaultState(), Block.NOTIFY_LISTENERS);
+            if ((state.isAir() || (state.isOf(Blocks.LAVA) && !Blocks.LAVA.getFluidState(state).isStill())) && getMana() >= COST) {
+                world.setBlockState(pos, Blocks.LAVA.getDefaultState(), Block.NOTIFY_LISTENERS);
                 addMana(-COST);
 
                 if (getMana() <= 0) {
@@ -48,12 +48,12 @@ public class AquaforaBlockEntity extends TileEntityFunctionalFlower {
 
     @Override
     public int getMaxMana() {
-        return COST * 2;
+        return (int) (COST * 1.5);
     }
 
     @Override
     public int getColor() {
-        return 0x123A32;
+        return 0;
     }
 
     @Nullable

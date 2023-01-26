@@ -15,9 +15,13 @@ import java.util.function.BiConsumer;
 public class MSBlocks {
     public static final Block AQUAFORA = new BlockSpecialFlower(StatusEffects.WATER_BREATHING, 5, FabricBlockSettings.copy(Blocks.POPPY), () -> MSBlockEntities.AQUAFORA);
     public static final Block FLOATING_AQUAFORA = new BlockFloatingSpecialFlower(ModBlocks.FLOATING_PROPS, () -> MSBlockEntities.AQUAFORA);
+    public static final Block SPEWOMAGMA = new BlockSpecialFlower(StatusEffects.GLOWING, 10, FabricBlockSettings.copy(Blocks.POPPY), () -> MSBlockEntities.SPEWOMAGMA);
+    public static final Block FLOATING_SPEWOMAGMA = new BlockFloatingSpecialFlower(ModBlocks.FLOATING_PROPS, () -> MSBlockEntities.SPEWOMAGMA);
 
     public static void register(BiConsumer<Block, Identifier> r) {
         r.accept(AQUAFORA, MSConstants.id(MSConstants.BlockNames.AQUAFORA));
         r.accept(FLOATING_AQUAFORA, MSConstants.id(MSConstants.BlockNames.FLOATING_AQUAFORA));
+        r.accept(SPEWOMAGMA, MSConstants.id(MSConstants.BlockNames.SPEWOMAGMA));
+        r.accept(FLOATING_SPEWOMAGMA, MSConstants.id(MSConstants.BlockNames.FLOATING_SPEWOMAGMA));
     }
 }

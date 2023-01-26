@@ -1,9 +1,15 @@
 # More Skylore
-Finite water, additional Botania flowers and other addons used by the Skylore modpack
+Finite water, additional Botania flowers and other addons used by the Skylore
+modpack
 
 ## Features
 ### Aquafora
-A functional Botania flower that consumes some mana to generate water blocks around itself.
+A functional Botania flower that consumes some mana to generate water blocks
+around itself.
+
+### Spewomagma
+A functional (and uncultured) Botania flower that consumes waste amounts of
+mana to spew lava blocks around itself.
 
 ### Finite water
 A configurable option to make the water finite, just like lava. 

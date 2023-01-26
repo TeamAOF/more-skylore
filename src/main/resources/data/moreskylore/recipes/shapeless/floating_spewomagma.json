@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "botania:floating_flowers"
+    },
+    {
+      "item": "moreskylore:spewomagma"
+    }
+  ],
+  "result": {
+    "item": "moreskylore:floating_spewomagma"
+  }
+}

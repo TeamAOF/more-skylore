@@ -11,7 +11,8 @@ import vazkii.botania.client.render.tile.RenderTileSpecialFlower;
 public class MoreSkyloreClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), MSBlocks.AQUAFORA);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), MSBlocks.AQUAFORA, MSBlocks.SPEWOMAGMA);
         BlockEntityRendererRegistry.register(MSBlockEntities.AQUAFORA, RenderTileSpecialFlower::new);
+        BlockEntityRendererRegistry.register(MSBlockEntities.SPEWOMAGMA, RenderTileSpecialFlower::new);
     }
 }
