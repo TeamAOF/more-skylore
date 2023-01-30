@@ -9,19 +9,14 @@ import java.util.List;
 import java.util.Set;
 
 public class MSMixinConfigPlugin implements IMixinConfigPlugin {
-    private static Boolean shouldWaterBeFinite;
+    private static Boolean makeWaterFinite;
+    private static Boolean removeNetherPortals;
 
-    // Just a precaution in case this setting somehow gets changed at a wrong time
-    private boolean shouldWaterBeFinite() {
-        if (shouldWaterBeFinite == null) {
-            shouldWaterBeFinite = MSConfig.get().makeWaterFinite;
-        }
-        return shouldWaterBeFinite;
-    }
 
     @Override
     public void onLoad(String mixinPackage) {
-
+        makeWaterFinite = MSConfig.get().makeWaterFinite;
+        removeNetherPortals = MSConfig.get().removeNetherPortals;
     }
 
     @Override
@@ -31,7 +26,11 @@ public class MSMixinConfigPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-        return !mixinClassName.equals("com.alloffabric.moreskylore.mixin.WaterFluidMixin") || shouldWaterBeFinite();
+        return switch (mixinClassName) {
+            case "com.alloffabric.moreskylore.mixin.AbstractFireBlockMixin" -> removeNetherPortals;
+            case "com.alloffabric.moreskylore.mixin.WaterFluidMixin" -> makeWaterFinite;
+            default -> true;
+        };
     }
 
     @Override

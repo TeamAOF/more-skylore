@@ -14,5 +14,14 @@ public class MSConstants {
         public static final String FLOATING_AQUAFORA = "floating_aquafora";
         public static final String SPEWOMAGMA = "spewomagma";
         public static final String FLOATING_SPEWOMAGMA = "floating_spewomagma";
+        public static final String RESEARCH_TABLE = "research_table";
+    }
+
+    public static class ItemNames {
+        public static final String PORTAL_LIGHTER = "portal_lighter";
+    }
+
+    public static class NbtNames {
+        public static final String INVENTORY = "inventory";
     }
 }

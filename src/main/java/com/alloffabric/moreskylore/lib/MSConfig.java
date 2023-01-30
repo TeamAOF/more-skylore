@@ -12,6 +12,7 @@ public class MSConfig implements ConfigData {
     public boolean makeWaterFinite = true;
     public int spewomagmaManaCost = 15_000;
     public int spewomagmaRange = 1;
+    public boolean removeNetherPortals = true;
 
     private static MSConfig config;
 

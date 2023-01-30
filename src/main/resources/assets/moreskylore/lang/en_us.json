@@ -4,6 +4,7 @@
   "text.autoconfig.moreskylore.option.spewomagmaManaCost": "Spewomagma mana cost",
   "text.autoconfig.moreskylore.option.spewomagmaRange": "Spewomagma range",
   "text.autoconfig.moreskylore.option.makeWaterFinite": "Make water finite",
+  "text.autoconfig.moreskylore.option.removeNetherPortals": "Remove lighting nether portals by fire",
   "item.moreskylore.aquafora": "Aquafora",
   "item.moreskylore.floating_aquafora": "Floating Aquafora",
   "block.moreskylore.aquafora": "Aquafora",
@@ -13,5 +14,6 @@
   "item.moreskylore.floating_spewomagma": "Floating Spewomagma",
   "block.moreskylore.spewomagma": "Spewomagma",
   "block.moreskylore.floating_spewomagma": "Floating Spewomagma",
-  "block.moreskylore.spewomagma.reference": "An uncultured hottie"
+  "block.moreskylore.spewomagma.reference": "An uncultured hottie",
+  "item.moreskylore.portal_lighter": "Portal lighter"
 }
