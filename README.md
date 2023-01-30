@@ -15,6 +15,11 @@ mana to spew lava blocks around itself.
 A configurable option to make the water finite, just like lava. 
 Meant to add a little spice to the game, or perhaps to annoy people.
 
+### Nether portal removal and portal lighter
+A configurable option to remove the nether portals activation by fire. As an
+additional tool for gating nether in modpacks an uncraftable portal lighter
+item is available
+
 ## Technical information
 
 - Requirements: Fabric API, Botania, Cloth Config
